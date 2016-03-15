@@ -7,7 +7,7 @@ from haushaltsbuch.frame.bank import BankFactory
 
 def main():
 #     banks = BankFactory()
-    rawTransactions = readStatement(join('Kontoauszug.CSV'), ';')
+    rawTransactions = readStatement(join('..', 'test.CSV'), ';')
     for transaction in rawTransactions:
         print transaction
 

@@ -28,10 +28,11 @@ class AccountFactory(object):
 
 class Account():
     def __init__(self, name, description, numbers):
+        print numbers
         self.name = name
         self.description = description
-        self.accountNumber = numbers['account']
-        self.bankCode = numbers['bank']
+        self.accountNumber = numbers['accountNumber']
+        self.bankCode = numbers['bankCode']
         self.iban = numbers['iban']
         self.bic = numbers['bic']
         self.correpondents = CorrespondentFactory()
